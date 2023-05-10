@@ -2,12 +2,10 @@ server:
   port: 9999
   servlet:
     context-path: /studyrooms/api
-spring:
-  http:
     encoding:
-      force: true
       charset: UTF-8
-      enabled: UTF-8
+      force: true
+spring:
   mvc:
     static-path-pattern: /**
   devtools:
@@ -16,8 +14,8 @@ spring:
       additional-paths: src/main/java #重启目录
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://localhost:3306/self_study_rooms?zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    password: Csw2127022
+    url: jdbc:mysql://localhost:3306/self_study_rooms?serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5

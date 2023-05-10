@@ -92,19 +92,10 @@ public class MakeLogsController extends BaseController{
     @ResponseBody
     public R cancel(MakeLogs makeLog){
 
-        Log.info("学生爽约， 传入参数：{}", makeLog);
+        Log.info("学生违约， 传入参数：{}", makeLog);
 
         makeLog.setStatus(SysCode.MAKE_STATUS_CANCLE);
         makeLogsService.update(makeLog);
-
-        return R.success();
-    }
-
-    @PostMapping("/delete")
-    @ResponseBody
-    public R delete(MakeLogs makeLog){
-
-        makeLogsService.delete(makeLog);
 
         return R.success();
     }

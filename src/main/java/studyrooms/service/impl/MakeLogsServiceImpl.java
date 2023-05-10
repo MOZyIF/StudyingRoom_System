@@ -74,7 +74,7 @@ public class MakeLogsServiceImpl implements MakeLogsService {
     @Transactional
     public void delete(MakeLogs makeLogs) {
 
-        makeLogsDao.deleteById(makeLogs.getId());
+        makeLogsDao.deleteById(makeLogs);
     }
 
     @Override

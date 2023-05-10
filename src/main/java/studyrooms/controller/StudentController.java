@@ -15,7 +15,7 @@ import studyrooms.service.StudentService;
 import studyrooms.service.UserService;
 
 @Controller
-@RequestMapping("/students")
+@RequestMapping("/student")
 public class StudentController extends BaseController{
 
     protected static final Logger Log = LoggerFactory.getLogger(StudentController.class);

@@ -91,6 +91,7 @@ public class IndexController extends BaseController{
 
         Users oldUser = userService.getOne(user.getId());
 
+
         if(oldUser.getUserName().equals(user.getUserName())){
 
             userService.update(user);
